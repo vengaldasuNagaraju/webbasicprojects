@@ -18,14 +18,15 @@ form.addEventListener('submit' , (e) =>{
     addTodo()
 })
 
-function addTodo(todo){
+function addTodo(){
     let todoText = input.value
 
     //console.log(todoText)
 
-    if(todo){
-        todoText = todo.text
-    }
+    // if(todo){
+    //     console.log(todo.text)
+    //     todoText = todo.text
+    // }
 
     if(todoText){
        const todoEl = document.createElement('li')

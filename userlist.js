@@ -12,13 +12,16 @@ async function getData(){
     const res = await fetch('https://randomuser.me/api?results=50')
     
     const {results} = await res.json()
+
     //i get total results 
     //console.log(results)
    
     //clear result 
+
     result.innerHTML = ''
 
     //finding the indivisual results
+
     results.forEach( user =>{
         const li = document.createElement('li')
         listItems.push(li)
@@ -35,9 +38,11 @@ async function getData(){
 }
 
 function filterData(searchterm){
+
     //initally we added the all the items into the itemslist and we
     //  are searching the element we are searching on the browser
     //  which exist on the stored listitems if exist we get the result other wise we dont get
+    
     listItems.forEach(item =>{
         if(item.innerText.toLowerCase().includes(searchterm.toLowerCase())){
             item.classList.remove('hide')

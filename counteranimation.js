@@ -16,6 +16,7 @@ function resetDom(){
     nums.forEach(num =>{
         num.classList.value = ''
     })
+    
     nums[0].classList.add('in')
 }
 
@@ -26,7 +27,7 @@ function runAnimation(){
         const nextToLast = nums.length - 1
 
         //animatedend is an evenet in javascript 
-        //we use get the name of animationname use the anmationName as default
+        //we use get the name of animationname use the animationName as default
         num.addEventListener('animationend' , (e) =>{
             if(e.animationName === 'goIn' && idx !== nextToLast){
                 num.classList.remove('in')
@@ -35,7 +36,7 @@ function runAnimation(){
             }
             else if(e.animationName === 'goOut' && num.nextElementSibling){
                 num.nextElementSibling.classList.add('in')
-                //here we checke for the nextsibiling exist or not if exist wwwe add the in 
+                //here we check for the nextsibiling if next sibling  exist we add the in class  
             }
             else{
                 //we are adding the hide and show classes 

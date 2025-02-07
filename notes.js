@@ -6,7 +6,7 @@ if(notes){
     notes.forEach(note => addNewNote(note))
 }
 
-console.log(notes)
+//console.log(notes)
 
 addBtn.addEventListener('click' , () => addNewNote())
 

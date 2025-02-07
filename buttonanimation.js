@@ -22,7 +22,7 @@ buttons.forEach(button =>{
         circle.classList.add('circle')
         circle.style.top = yInside + 'px'
         circle.style.left  = xInside + 'px'
-
+        
         this.appendChild(circle)
 
         setTimeout(() => circle.remove() , 500)

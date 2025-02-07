@@ -15,12 +15,12 @@ toggle.addEventListener('click',(e) =>{
     const html = document.querySelector('html')
     if(html.classList.contains('dark')){
         html.classList.remove('dark')
-        e.target.innerHTML ='Dark Mode'
+        e.target.innerText ='Dark Mode'
     }
     else{
         //if the dark mode is not exist then we set to dark mode and write the content to be lightmode
         html.classList.add('dark')
-        e.target.innerHTML ='Light Mode'   
+        e.target.innerText ='Light Mode'   
     }
 })
 

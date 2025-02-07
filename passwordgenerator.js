@@ -44,8 +44,9 @@ if(typesCount === 0){
 }
 
 for(let i=0 ; i<length ; i+=typesCount){
+    //here we are using the typesarr has the key elements stores 
     typesArr.forEach(type =>{
-        //indide tyhe funcname the lower and upper willl be exist by using the object.keys function 
+        //inside tyhe funcname the lower and upper willl be exist by using the object.keys function 
         const funcName = Object.keys(type)[0]
         //console.log(funcName)
         generatedPassword +=randomFunc[funcName]()

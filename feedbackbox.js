@@ -9,6 +9,9 @@ const panel = document.getElementById('panel')
 
 let selectrating = 'Satisfied'
 
+//here e.target.parentnode is ratingcontainer in this is the class name of rating exist then we add the active
+
+
 ratingsContainer.addEventListener('click' , (e) =>{
 
     if(e.target.parentNode.classList.contains('rating')){

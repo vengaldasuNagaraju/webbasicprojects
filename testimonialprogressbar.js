@@ -50,6 +50,9 @@ const testimonialsarray =[
 let idx = 2
 
 function updateTestimonial(){
+
+    //here i am using the destructuring 
+
     const {name , position , photo , text } = testimonialsarray[idx]
     testimonial.innerHTML =text
     userImage.src =photo
