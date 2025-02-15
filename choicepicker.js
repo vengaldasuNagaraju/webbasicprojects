@@ -9,17 +9,13 @@ textarea.addEventListener('keyup' , (e) =>{
         setTimeout(() => {
             e.target.value ='';
         }, 10);
-
         randomSelect();
     }
-
 })
 
 function createTags(input){
     const tags =input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
-    
     tagsEl.innerHTML =''
-
     tags.forEach(tag =>{
         //here i am creating the each span element 
         const tagEl = document.createElement('span')
@@ -29,12 +25,9 @@ function createTags(input){
         //This is a property that sets or gets the visible text content of an element.
         //his should be a variable containing a string. which is nothing but the loop 
         tagEl.innerText =tag
-
         tagsEl.appendChild(tagEl)
     })
 }
-
-
 function randomSelect(){
     const times =30
     const interval = setInterval(() => {

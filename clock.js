@@ -10,15 +10,16 @@ const days = ["Sunday" ,"Monday" ,"Tuesday" ,"Wednesday" ,"Thursday" ,"Friday","
 const months = ["Jan" ,"Feb" ,"Mar" ,"Apr" ,"May" ,"Jun" ,"Jul" , "Aug" ,"Sep","Oct","Nov" ,"Dec"];
 
 toggle.addEventListener('click',(e) =>{
-
-    //if it is in dark mode on click we are removing the dark mode and writing the content on button Darkmode
+    //if it is in dark mode on click we are removing the dark 
+    // mode and writing the content on button Darkmode
     const html = document.querySelector('html')
     if(html.classList.contains('dark')){
         html.classList.remove('dark')
         e.target.innerText ='Dark Mode'
     }
     else{
-        //if the dark mode is not exist then we set to dark mode and write the content to be lightmode
+        //if the dark mode is not exist then we set to dark mode and 
+        // write the content to be lightmode
         html.classList.add('dark')
         e.target.innerText ='Light Mode'   
     }
